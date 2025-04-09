@@ -1,0 +1,17 @@
+flavors:
+  mazda:
+    app:
+      name: "Mazda App"
+
+    android:
+      applicationId: "com.example.mazda"  
+    ios:
+      bundleId: "com.example.mazda"     
+  nissan:
+    app:
+      name: "Nissan App"
+  
+    android:
+      applicationId: "com.example.nissan"
+    ios:
+      bundleId: "com.example.nissan"    

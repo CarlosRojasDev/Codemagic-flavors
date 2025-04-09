@@ -1,0 +1,11 @@
+{
+    "mazda": {
+      "name": "Mazda",
+      "appId": "com.example.mazda"
+    },
+    "nissan": {
+      "name": "Nissan",
+      "appId": "com.example.nissan"
+    }
+  }
+  

@@ -1,0 +1,28 @@
+workflows:
+  mazda:
+    name: Mazda Workflow
+    environment:
+      flutter: stable
+      variables:
+        FLAVOR: mazda
+        APP_ID: com.example.mazda
+    scripts:
+      - flutter clean
+      - flutter pub get
+      - flutter build apk --flavor=mazda --dart-define=FLAVOR=mazda
+    artifacts:
+      - build/app/outputs/flutter-apk/app-mazda.apk
+
+  nissan:
+    name: Nissan
+    environment:
+      flutter: stable
+      variables:
+        FLAVOR: nissan
+        APP_ID: com.example.nissan
+    scripts:
+      - flutter clean
+      - flutter pub get
+      - flutter build apk --flavor=nissan --dart-define=FLAVOR=nissan
+    artifacts:
+      - build/app/outputs/flutter-apk/app-nissan.apk
